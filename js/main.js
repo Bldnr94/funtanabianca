@@ -8,9 +8,17 @@
      { src: 'assets/img/galerie/gal-01.webp', alt: 'Vue du domaine' },
    ──────────────────────────────────────────────────────────────── */
 const GALLERY_IMAGES = [
-  // { src: 'assets/img/galerie/gal-01.webp', alt: 'Vue du domaine Funtana Bianca' },
-  // { src: 'assets/img/galerie/gal-02.webp', alt: 'Caseddu en pierre sèche' },
-  // { src: 'assets/img/galerie/gal-03.webp', alt: 'Table corse traditionnelle' },
+  { src: 'assets/img/galerie/gal-01.webp', alt: 'Plateau de charcuterie corse et vin rouge devant la cheminée' },
+  { src: 'assets/img/galerie/gal-02.webp', alt: 'Cheval à l\'entrée de la bergerie en pierre' },
+  { src: 'assets/img/galerie/gal-03.webp', alt: 'Plateau de charcuterie et vin, salle intérieure' },
+  { src: 'assets/img/galerie/gal-04.webp', alt: 'Vin rouge et figatellu, table du restaurant' },
+  { src: 'assets/img/galerie/gal-05.webp', alt: 'Plateau de charcuterie corse gastronomique' },
+  { src: 'assets/img/galerie/gal-06.webp', alt: 'Charcuterie corse et verre de vin en terrasse' },
+  { src: 'assets/img/galerie/gal-07.webp', alt: 'Chiens et chevaux dans les pâturages du domaine' },
+  { src: 'assets/img/galerie/gal-08.webp', alt: 'Assiette corse : lonzu, fromage et frites maison' },
+  { src: 'assets/img/galerie/gal-09.webp', alt: 'Mur en granite corse, architecture traditionnelle' },
+  { src: 'assets/img/galerie/gal-10.webp', alt: 'Cochon à la broche pour une soirée événementielle' },
+  { src: 'assets/img/galerie/gal-11.webp', alt: 'Ambiance de soirée au bar du domaine' },
 ];
 
 /* ── NAV ─────────────────────────────────────────── */
