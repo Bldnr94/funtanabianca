@@ -2,11 +2,7 @@
    AUBERGE FUNTANA BIANCA — js/main.js
    ════════════════════════════════════════════════ */
 
-/* ── GALERIE : ajoutez vos chemins d'images ici ──────────────────
-   Format : { src: 'chemin/image.webp', alt: 'Description' }
-   Exemple :
-     { src: 'assets/img/galerie/gal-01.webp', alt: 'Vue du domaine' },
-   ──────────────────────────────────────────────────────────────── */
+/* ── GALERIE ──────────────────────────────────────────────────── */
 const GALLERY_IMAGES = [
   { src: 'assets/img/galerie/gal-01.webp', alt: 'Plateau de charcuterie corse et vin rouge devant la cheminée' },
   { src: 'assets/img/galerie/gal-02.webp', alt: 'Cheval à l\'entrée de la bergerie en pierre' },
