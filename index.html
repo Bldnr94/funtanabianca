@@ -51,16 +51,16 @@
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "validFrom": "2025-05-01",
-        "validThrough": "2025-09-30",
+        "validFrom": "2026-05-01",
+        "validThrough": "2026-09-30",
         "opens": "12:00",
         "closes": "22:00"
       },
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Saturday","Sunday"],
-        "validFrom": "2025-10-01",
-        "validThrough": "2026-04-30",
+        "validFrom": "2026-10-01",
+        "validThrough": "2027-04-30",
         "opens": "12:00",
         "closes": "22:00"
       }
@@ -93,7 +93,7 @@
 <!-- ════ NAV ════ -->
 <nav id="main-nav">
   <a href="#" class="nav-logo">Auberge <span>Funtana Bianca</span></a>
-  <ul class="nav-links">
+  <ul class="nav-links" id="nav-menu">
     <li><a href="#bergerie">Bergerie</a></li>
     <li><a href="#restauration">Restauration</a></li>
     <li><a href="#services">Services</a></li>
@@ -103,13 +103,15 @@
     <li><a href="#" onclick="openGalerie();return false;" id="nav-galerie-link">Galerie</a></li>
   </ul>
   <a href="tel:0681171817" class="nav-phone">📞&nbsp;06 81 17 18 17</a>
+  <button class="nav-burger" id="nav-burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- ════ HERO ════ -->
 <section class="hero" id="hero">
   <div class="hero-bg">
-    <!-- REMPLACER : placez votre photo principale dans assets/img/hero.webp -->
-    <img src="assets/img/placeholder.svg"
+    <img src="assets/img/hero.webp"
          alt="Auberge Funtana Bianca — Vue sur les montagnes de l'Alta Rocca, Quenza, Corse"
          width="1920" height="1080" loading="eager" fetchpriority="high">
   </div>
@@ -207,19 +209,16 @@
 
     <div class="reveal" style="transition-delay:0.14s">
       <div class="photo-grid pg2">
-        <!-- REMPLACER : assets/img/bergerie-1.webp — vue extérieure Caseddu (ratio 2/3) -->
         <div class="photo-slot tall" style="grid-row:span 2">
           <img src="assets/img/bergerie-1.webp"
                alt="Caseddu — bergerie en pierre sèche de l'Auberge Funtana Bianca, Quenza"
                width="400" height="600" loading="lazy">
         </div>
-        <!-- REMPLACER : assets/img/bergerie-2.webp — intérieur chambre -->
         <div class="photo-slot">
           <img src="assets/img/bergerie-2.webp"
                alt="Intérieur Caseddu — chambre avec vue sur les montagnes, Funtana Bianca"
                width="400" height="300" loading="lazy">
         </div>
-        <!-- REMPLACER : assets/img/bergerie-3.webp — vue panoramique -->
         <div class="photo-slot">
           <img src="assets/img/bergerie-3.webp"
                alt="Vue panoramique Alta Rocca depuis la terrasse de la bergerie"
@@ -235,19 +234,16 @@
   <div class="split">
     <div class="reveal">
       <div class="photo-grid pg2">
-        <!-- REMPLACER : assets/img/restauration-1.webp — table ou terrasse -->
         <div class="photo-slot sq" style="grid-column:1/-1;">
           <img src="assets/img/restauration-1.webp"
                alt="Table dressée en terrasse — Auberge Funtana Bianca, Quenza, Corse"
                width="800" height="800" loading="lazy">
         </div>
-        <!-- REMPLACER : assets/img/restauration-2.webp — plat maison -->
         <div class="photo-slot">
           <img src="assets/img/restauration-2.webp"
                alt="Plat traditionnel corse cuisiné par Marina — Funtana Bianca"
                width="400" height="300" loading="lazy">
         </div>
-        <!-- REMPLACER : assets/img/restauration-3.webp — charcuterie / fromages -->
         <div class="photo-slot">
           <img src="assets/img/restauration-3.webp"
                alt="Charcuterie Nustrale et fromages de chèvre Tra li Monti Marchetti"
@@ -397,19 +393,16 @@
 
     <div class="reveal" style="transition-delay:0.14s">
       <div class="photo-grid pg2">
-        <!-- REMPLACER : assets/img/evenements-1.webp — salle ou terrasse événement (16/9) -->
         <div class="photo-slot wide" style="grid-column:1/-1;aspect-ratio:16/9;">
           <img src="assets/img/evenements-1.webp"
                alt="Grande salle événement Auberge Funtana Bianca — mariage, anniversaire en Corse"
                width="800" height="450" loading="lazy">
         </div>
-        <!-- REMPLACER : assets/img/evenements-2.webp — terrasse extérieure -->
         <div class="photo-slot">
           <img src="assets/img/evenements-2.webp"
                alt="Terrasse ombragée sous les châtaigniers — domaine Funtana Bianca"
                width="400" height="300" loading="lazy">
         </div>
-        <!-- REMPLACER : assets/img/evenements-3.webp — salle intérieure -->
         <div class="photo-slot">
           <img src="assets/img/evenements-3.webp"
                alt="Salle intérieure disponible à la privatisation — Funtana Bianca"
@@ -440,12 +433,11 @@
       <div class="contact-info">
         <div class="ci-row"><span class="ci-ico">📍</span><span>Lieu-dit Ghjaliaccu · Route du Cuscionu · 20122 Quenza</span></div>
         <div class="ci-row"><span class="ci-ico">✉️</span><a href="mailto:adriengrenaudier@gmail.com">adriengrenaudier@gmail.com</a></div>
-        <div class="ci-row"><span class="ci-ico">🌐</span><a href="http://www.funtana-bianca.com" target="_blank" rel="noopener">www.funtana-bianca.com</a></div>
+        <div class="ci-row"><span class="ci-ico">🌐</span><a href="https://www.funtana-bianca.com" target="_blank" rel="noopener">www.funtana-bianca.com</a></div>
       </div>
     </div>
 
     <div class="reveal" style="transition-delay:0.14s">
-      <!-- REMPLACER : remplacez c1562cc0-a13b-4796-84f8-03123cccca61 par votre clé sur web3forms.com -->
       <form id="contact-form" class="contact-form"
             action="https://api.web3forms.com/submit" method="POST" novalidate>
 
@@ -533,7 +525,6 @@
     </div>
     <div class="reveal" style="transition-delay:0.14s">
       <!-- Image statique cliquable — remplace l'iframe Google Maps (conformité RGPD) -->
-      <!-- REMPLACER : assets/img/carte-quenza.webp — capture Google Maps ou OpenStreetMap -->
       <a href="https://maps.google.com/?q=41.789676682927364,9.126039167968523"
          target="_blank" rel="noopener noreferrer"
          class="map-link"
@@ -570,7 +561,7 @@
       <h4>Contact &amp; horaires</h4>
       <a href="tel:0681171817">📞 06 81 17 18 17</a>
       <a href="tel:0762609291">📞 07 62 60 92 91</a>
-      <a href="http://www.funtana-bianca.com" target="_blank" rel="noopener" style="margin-top:0.4rem;">www.funtana-bianca.com</a>
+      <a href="https://www.funtana-bianca.com" target="_blank" rel="noopener" style="margin-top:0.4rem;">www.funtana-bianca.com</a>
       <p style="margin-top:0.8rem;">🌞 Été : 1er mai – 30 sept. · Midi &amp; soir</p>
       <p>❄️ Hiver : Sam. &amp; dim. sur réservation</p>
       <p style="margin-top:0.7rem;font-size:0.75rem;font-style:italic;">Réservation uniquement par téléphone<br>Paiement espèces</p>
@@ -585,7 +576,7 @@
     </div>
   </div>
   <div class="footer-bar">
-    <span>© 2025 Auberge Funtana Bianca — Quenza · Corse</span>
+    <span>© 2026 Auberge Funtana Bianca — Quenza · Corse</span>
     <span>Réservation tél. uniquement · Paiement espèces · SIRET 41035813900039</span>
   </div>
 </footer>
@@ -595,7 +586,7 @@
   <div class="galerie-overlay-inner">
     <div class="gal-top">
       <p class="gal-top-title">Auberge <span>Funtana Bianca</span> — <em style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;">Galerie photos</em></p>
-      <button class="gal-close" onclick="closeGalerie()">✕ Fermer</button>
+      <button class="gal-close" id="gal-close-btn" onclick="closeGalerie()">✕ Fermer</button>
     </div>
     <div class="gal-grid" id="gal-grid">
       <div class="gal-empty">Galerie en cours de construction — revenez bientôt !</div>

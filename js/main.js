@@ -27,6 +27,21 @@ window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', scrollY > 40);
 });
 
+const burger = document.getElementById('nav-burger');
+const navMenu = document.getElementById('nav-menu');
+if (burger && navMenu) {
+  burger.addEventListener('click', () => {
+    const open = navMenu.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', String(open));
+  });
+  navMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navMenu.classList.remove('open');
+    burger.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+  }));
+}
+
 /* ── REVEAL (scroll animation) ───────────────────── */
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => {
