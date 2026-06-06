@@ -136,6 +136,11 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowRight') lbNav(1);
 });
 
+/* ── GALERIE STRIP ───────────────────────────────── */
+function openGalerieAt(index) {
+  openLightbox(index);
+}
+
 /* ── FORMULAIRE WEB3FORMS ────────────────────────── */
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
@@ -169,6 +174,20 @@ if (contactForm) {
     btn.textContent = 'Envoyer le message';
   });
 }
+
+/* ── WHATSAPP BOUTON FLOTTANT ────────────────────── */
+(function initWhatsApp() {
+  const btn = document.getElementById('whatsapp-btn');
+  if (!btn) return;
+  let shown = false;
+  function show() {
+    if (shown) return;
+    shown = true;
+    btn.classList.add('visible');
+  }
+  setTimeout(show, 3000);
+  window.addEventListener('scroll', show, { once: true });
+})();
 
 /* ── BANDEAU COOKIES CNIL ────────────────────────── */
 function cookieConsent(choice) {
