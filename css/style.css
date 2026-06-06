@@ -126,6 +126,8 @@ nav.scrolled { box-shadow: 0 2px 28px rgba(80,40,5,0.18); }
 .nav-links a:hover::after { right: 0; }
 .nav-phone { font-size: 0.76rem; letter-spacing: 0.04em; border: none; color: var(--sable); background: var(--terre); padding: 0.52rem 1.2rem; font-family: 'Jost', sans-serif; font-weight: 500; transition: all 0.25s; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem; flex-shrink: 0; white-space: nowrap; }
 .nav-phone:hover { background: var(--terre-dark); color: var(--sable); }
+.nav-lang { font-size: 0.65rem; letter-spacing: 0.12em; font-weight: 500; color: var(--text-muted); text-decoration: none; border: 1px solid var(--border); padding: 0.3rem 0.6rem; transition: all 0.2s; font-family: 'Jost', sans-serif; flex-shrink: 0; }
+.nav-lang:hover { color: var(--terre-dark); border-color: var(--ocre-dark); }
 
 /* ── HERO ── */
 .hero { height: 100vh; min-height: 640px; position: relative; display: flex; align-items: flex-end; overflow: hidden; }
