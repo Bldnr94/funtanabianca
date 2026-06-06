@@ -103,7 +103,7 @@
     <li><a href="#acces">Accès</a></li>
     <li><a href="#" onclick="openGalerie();return false;" id="nav-galerie-link">Galerie</a></li>
   </ul>
-  <a href="tel:0681171817" class="nav-phone">📞&nbsp;06 81 17 18 17</a>
+  <a href="tel:0681171817" class="nav-phone">📞&nbsp;<span class="nav-phone-num">06 81 17 18 17</span></a>
   <button class="nav-burger" id="nav-burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
     <span></span><span></span><span></span>
   </button>
@@ -154,17 +154,33 @@
   </div>
 </section>
 
-<!-- BAND -->
-<div class="band">
-  <div class="band-item"><strong>Altitude</strong>&nbsp;1 300 m</div>
-  <div class="band-dot"></div>
-  <div class="band-item"><strong>Cuscionu</strong>&nbsp;à 5 km</div>
-  <div class="band-dot"></div>
-  <div class="band-item"><strong>Réservation</strong>&nbsp;tél. uniquement</div>
-  <div class="band-dot"></div>
-  <div class="band-item"><strong>Paiement</strong>&nbsp;espèces</div>
-  <div class="band-dot"></div>
-  <div class="band-item"><strong>Animaux non admis</strong>&nbsp;en chambre</div>
+<!-- INFO BAR -->
+<div class="info-bar" role="region" aria-label="Informations pratiques">
+  <div class="info-bar-item">
+    <span class="ib-icon">🏔</span>
+    <span class="ib-label">Altitude</span>
+    <span class="ib-value">1 300 m</span>
+  </div>
+  <div class="info-bar-item">
+    <span class="ib-icon">📅</span>
+    <span class="ib-label">Ouverture</span>
+    <span class="ib-value">Été 7j/7<small>Sam.–dim. en hiver</small></span>
+  </div>
+  <div class="info-bar-item">
+    <span class="ib-icon">🛏</span>
+    <span class="ib-label">Caseddu dès</span>
+    <span class="ib-value">90 €<small>p.-déj. en sus</small></span>
+  </div>
+  <div class="info-bar-item">
+    <span class="ib-icon">📞</span>
+    <span class="ib-label">Réservation</span>
+    <span class="ib-value">Téléphone<small>uniquement</small></span>
+  </div>
+  <div class="info-bar-item">
+    <span class="ib-icon">💶</span>
+    <span class="ib-label">Paiement</span>
+    <span class="ib-value">Espèces<small>virement pour confirmer</small></span>
+  </div>
 </div>
 
 <!-- ════ BERGERIE ════ -->
