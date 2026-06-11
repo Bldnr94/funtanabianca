@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow:
 
-Sitemap: https://www.funtana-bianca.com/sitemap.xml
+Sitemap: https://www.funtanabianca.com/sitemap.xml
